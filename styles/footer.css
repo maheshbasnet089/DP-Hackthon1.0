@@ -1,0 +1,97 @@
+footer{
+    background: #181d38;
+    padding: 70px 0;
+    color: #fff;
+}
+.footer__section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .logo{
+    font-size: 24px;
+   
+}
+footer .logo a{
+    color: #4caf50;
+    text-decoration: none;
+}
+footer .logo a span{
+    font-weight: 700;
+}
+.left__foot p{
+    margin-top: 15px;
+   font-size: 15px;
+}
+
+.mid__foot h5,.right__foot h5{
+    font-size: 22px;
+    font-size: 600;
+    margin-bottom: 20px;
+}
+.mid__foot .links{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.mid__foot .links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.mid__foot .links a:hover{
+    color: #4caf50;
+}
+.right__foot{
+    width: 30%;
+}
+.input__group{
+    display: flex;
+    gap: 15px;
+}
+.right__foot form .input__group input{
+    padding: 12px;
+    background: transparent;
+    border: 1px solid #d5d5dd;
+    outline: none;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 100%;
+}
+.right__foot form .input__group input::placeholder{
+    color: #fff;
+}
+.input__group button{
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid #d5d5dd;
+    transition: 0.3s;
+}
+.input__group button:hover{
+    background: #4caf50;
+    border: 1px solid transparent;
+}
+
+@media screen and (max-width:760px) {
+    .mid__foot,.right__foot{
+        margin-top: 20px;
+        
+    }
+    
+}
+@media screen and (max-width:1000px) {
+    .right__foot{
+        width: unset;
+    }
+    
+}
+

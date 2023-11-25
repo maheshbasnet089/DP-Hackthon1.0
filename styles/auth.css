@@ -1,0 +1,72 @@
+.auth__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+.auth__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.auth__container form{
+    width: 340px;
+    padding: 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+.auth__container form h3{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.form__group{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.form__input{
+    display: flex;
+    flex-direction: column;
+}
+.form__input label{
+    color: #667285;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+.form__input input{
+    padding: 12px;
+    font-size: 17px;
+    color: #222;
+    width: calc(100% - 24px);
+    border-radius: 8px;
+    border: 1px solid #4caf50;
+    outline: none;
+    background: #f5f5ff;
+}
+.auth__container form .forgot__password{
+    text-align: right;
+    text-decoration: none;
+    margin-top: 10px;
+    color: #4caf50;
+    display: block;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.auth__container form .forgot__password:hover{
+    text-decoration: underline;
+}
+.auth__container form button{
+    width: 100%;
+    margin-top: 20px;
+    background: #4caf50;
+    padding: 12px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+}

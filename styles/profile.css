@@ -1,0 +1,121 @@
+.student__details__wrapper {
+    padding: 70px 0;
+}
+
+.student__details {
+    display: flex;
+}
+
+.student__header {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 20px;
+    border-radius: 6px;
+    flex-wrap: wrap;
+}
+
+.student__header img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50px;
+}
+
+.user__info p {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #222;
+}
+
+.user__info span {
+    font-size: 14px;
+    color: #667285;
+}
+
+.certificates__wrapper {
+    padding: 70px 0;
+}
+
+.certificates__wrapper h2 {
+    font-size: 45px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+.certificates {
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 30px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.certificate {
+    position: relative;
+    cursor: pointer;
+}
+
+.certificate p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    z-index: 20;
+    padding: 10px;
+    background: #4caf50;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.certificate:hover p {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.certificate img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.id__card__wrapper {
+    padding: 70px 0;
+    background: #f8f8f8;
+}
+
+.id__card__wrapper .id__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.id__card__wrapper .id__card img {
+    height: 400px;
+}
+
+.id__card__wrapper .id__card h3 {
+    font-size: 34px;
+    text-align: center;
+}
+
+@media screen and (max-width:520px) {
+    .certificates__wrapper h2 {
+        font-size: 32px;
+    }
+
+    .id__card__wrapper .id__card img {
+        width: 100%;
+        object-fit: contain;
+    }
+}
