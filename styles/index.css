@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+header{
+    width: 100%;
+}
+.page__width{
+    width: 1180px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+header nav{
+    display: flex;
+    width: 1180px;
+    max-width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+header nav .logo{
+    font-size: 24px;
+   
+}
+header nav .logo a{
+    color: #4caf50;
+    text-decoration: none;
+}
+header nav .logo a span{
+    font-weight: 700;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 23px;
+    color: #222;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+header nav ul li a:hover{
+    color: #4caf50;
+}
+header nav .authBtns{
+    display: flex;
+    gap: 15px;
+}
+header nav .authBtns a{
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #4caf50;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+    border: 1px solid transparent;
+}
+header nav .authBtns .login{
+    border: 1px solid #4caf50;
+    background: transparent;
+    color: #222;
+}
+header nav .authBtns .login:hover{
+    background: #4caf50;
+    color: #fff;
+}
+header nav .authBtns .signup:hover{
+    background: transparent;
+    color: #222;
+    border: 1px solid #4caf50;
+}
+
+/* Hero section css starts here  */
+.hero__section__wrapper{
+    background: url("../images/bg.png");
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero__content{
+    display: flex;
+    flex-direction: column;
+}
+.hero__content p{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #4caf50;
+}
+.hero__content h3{
+    font-size: 64px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+.hero__content span{
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 20px;
+    display: block;
+}
+/* Hero section css End here  */
+
+/* Feature Corses section css Starts here  */
+.feature__courses__wrapper{
+    padding: 70px 0;
+    background: #f8f8f8;
+}
+.feature__courses__wrapper h3{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    color: #222;
+    letter-spacing: 1px;
+}
+.course__cards{
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cours__card{
+    width: 340px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.cours__card:hover {
+    transform: translateY(-10px);
+
+}
+.cours__image img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  
+}
+.cours__card h4{
+    font-size: 20px;
+    color: #222;
+    padding: 10px 20px;
+}
+.cours__card p{
+    color: #222;
+    padding: 0px 20px;
+    font-size: 15px;
+}
+.cours__card .enroll__btn{
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width:700px) {
+    header nav ul{
+        gap: 10px;
+    }
+    .feature__courses__wrapper h3{
+        font-size: 32px;
+    }
+    
+}
+@media screen and (max-width:760px) {
+    header nav .authBtns{
+        margin-top: 15px;
+    }
+    
+}
+
+
+@media screen and (max-width:1000px) {
+    .hero__content h3{
+        font-size: 32px;
+    }
+    
+}
