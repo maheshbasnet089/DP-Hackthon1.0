@@ -1,0 +1,251 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+
+/* boiler plate code  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(145deg, #befcca, #8AFFA6);
+}
+
+
+/* some variables used throughout the code  */
+:root {
+    --hardgreen-color: #007F51;
+    --softgreen-color:#8AFFA4;
+    --gold-color:#FFD700;
+    --coral-color:#FF6F61;
+    --skyblue-color:#87CEEB;
+    --charcol-color:#333;
+    --darkgrey-color:#444;
+    --font-size: 16px;
+  }
+
+
+  /* main stylesheet code  */
+
+  #wrapper-div{
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    gap: 2vh;
+  }
+
+
+#left-area{
+    width: 14%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.25); 
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    padding: 20px; 
+}
+#left-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#left-area #photoarea{
+    width: 80%;
+    height: 20%;
+    background-image: url(/nischal_bhattarai/assests/user.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+#left-area i{
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-right: 12px;
+    cursor: pointer;
+}
+#left-area h4, #logout{
+    font-weight: 600;
+}
+#left-area #headings{
+    display: flex;
+    cursor: pointer;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 4vh;
+}
+#right-area{
+    width: 86%;
+    height: 100%;
+    /* background-color: pink; */
+}
+#nav{
+    width: 100%;
+    height: 10%;
+    /* background-color: pink; */
+    padding: 3px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 8vw;
+}
+#nav #search-box{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search__input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+    font-size: var(--font-size);
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 1.5s;
+    padding: 0px 20px;
+  }
+
+#logo{
+    width: 220px;
+    height: 50px;
+    background-image: url(/nischal_bhattarai/assests/logo.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+#ongoing-courses{
+    margin-top: 3vh;
+    width: 100%;
+    height: 35%;
+    background-image: url(https://images.pexels.com/photos/2203051/pexels-photo-2203051.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+}
+
+#blurred-area{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(5px);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#blurred-area #image-box-course{
+    width: 30vw;
+    aspect-ratio: 16/8;
+    background-color: red;
+    border-radius: 10px;
+    background-image: url(/nischal_bhattarai/assests/webdevelopment.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#image-box-course h4{
+    position: absolute;
+    bottom: 4px;
+    left: 20px;
+    color: wheat;
+    font-size: 22px;
+}
+#image-box-course i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 42px;
+    color: var(--coral-color);
+    cursor: pointer;
+}
+
+
+
+#contents p{
+    font-size: 16px;
+    color: white;
+}
+
+#contents h1{
+    margin-top: 15vh;
+    padding: 0px 40px;
+    color: white;
+    font-size: 38px;
+}
+
+#contents h4{
+    padding: 0px 40px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+h1{
+    font-size: 18px;
+    margin: 8px;
+
+}
+
+.course-carousel {
+    margin-top: -50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60%;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.course-card {
+  width: 260px;
+  padding: 15px;
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  border-radius: 10px;
+  background: linear-gradient(45deg, #8AFFA4, #007F51);
+  text-align: center;
+}
+
+.course-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.course-card h3 {
+  color: var(--darkgrey-color); 
+}
+.course-card p {
+  color: var(--charcol-color); 
+}
+
+.course-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .course-card:hover img {
+    transform: scale(1); 
+  }
